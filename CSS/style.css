@@ -1,0 +1,52 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+html, body{
+    height: 100%;
+}
+/* CSS Reset */
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.clear{
+    clear: both;
+}
+header{
+    background-color: #d6d6d6;
+    padding: 10px 2%;
+}
+.logo1{
+    width: 160px;
+    height: 60px;
+    float: left;
+    background-image: url(../imagens/logo1.png);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.logo2{
+    width: 160px;
+    height: 60px;
+    float: right;
+    background-image: url(../imagens/logo2.png);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 510px){
+    header{
+        text-align: center;
+    }
+    .logo1, .logo2{
+        margin-top: 10px;
+        display: inline-block;
+        float: none;
+    }
+}
